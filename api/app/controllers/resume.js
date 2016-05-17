@@ -31,3 +31,10 @@ ResumeController.getAll = function(req, res){
     })
 };
 
+ResumeController.getResume = function(req, res) {
+    Resume.findById(req.params.id, function (err, cvs) {
+        if (err) { throw err; }
+        res.status(200).json(cvs);
+    });
+};
+

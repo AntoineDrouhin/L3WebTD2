@@ -7,6 +7,7 @@ module.exports = function(router) {
 
     var path = require('path'),
         Util = require('../helpers/appUtils');
+        resumeCtrl = require('../controllers/resume.js');
 
     // --------------------------------------------------------------------------------------------------------------
     //                                                                                                  VERSION API
@@ -14,14 +15,14 @@ module.exports = function(router) {
     // -------- HOMEPAGE
     router.get('/resume/:id', function(req, res){
         Util.info('Load API information');
-        console.log("Id resume needed : " + req.id)
-        res.status(200).json(global.config.app);
+        console.log("Id resume needed : " + req.params.id);
+        resumeCtrl.getResume(req, res);
     });
 
-    router.param('id',function(req,res,next,id){
+/*    router.param('id',function(req,res,next,id){
         req.id = id;
 
-        next()
-    })
+        next();
+    })*/
 
 };

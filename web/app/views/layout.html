@@ -15,6 +15,7 @@
         </div>
         <ul>
             <li class="cv_item cv" ng-repeat="item in founds" ng-click="updateCv(item.person.id)">
+                <img src="{{item.person.photo}}" alt="{{item.person.name}}" />
                 <b><a>{{item.person.name}}</a></b>
                 <p>{{item.resume.title}}</p>
             </li>

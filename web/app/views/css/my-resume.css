@@ -1,19 +1,23 @@
 nav {
     float:left;
     background-color : #eeeeee;
-    width:20%;
-    height:100%;
+    width:15%;
     position:relative;
+    margin-left:5%;
+
 }
 
-nav li {
-    height:20px;
+nav :hover{
+    background-color:white;
+    border-top-color:#34495e;
+}
+nav li{
 
 }
 
 body {
 	font-family : arial, 'Trebuchet MS';
-	color : #34495e;	
+	color : 	
 	background : #eeeeee;
 }
 
@@ -23,10 +27,13 @@ li {
 
 #wrapper {
 	width: 75%;
-	margin: auto;
+	margin-right:5%;
 	background : white;
 	padding : 40px;
 	border-radius: 10px 60px;
+    overflow:auto;
+    max-height:100%;
+    position:relative;
 }
 
 #title {

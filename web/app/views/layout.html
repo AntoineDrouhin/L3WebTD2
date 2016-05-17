@@ -11,7 +11,7 @@
     <nav>
         <h4>Liste des CV :</h4>
         <ul>
-            <li ng-repeat="item in cv" class="cv">
+            <li ng-repeat="item in cvs" class="cv" ng-click="updateCv(item.person.id)">
                 {{item.person.name}}
             </li>
         </ul>
@@ -19,21 +19,21 @@
     <div id="wrapper">
 
         <div id="header" class="section">
-            <img src="{{cv[0].person.photo}}" alt="{{cv[0].person.name}}" />
+            <img src="{{cvs[selected].person.photo}}" alt="{{cvs[selected].person.name}}" />
             <div>
                 <ul>
-                    <li><h1>{{cv[0].cv[0].person.name}}</h1></li>
-                    <li>{{cv[0].person.contact.address.street}}, {{cv[0].person.contact.address.zipCode}} {{cv[0].person.contact.address.city}}, {{cv[0].person.contact.address.country}}</li>
-                    <li>@ : {{cv[0].person.contact.email}}</li>
-                    <li>Tel : {{cv[0].person.contact.phone}}</li>
+                    <li><h1>{{cvs[selected].person.name}}</h1></li>
+                    <li>{{cvs[selected].person.contact.address.street}}, {{cvs[selected].person.contact.address.zipCode}} {{cvs[selected].person.contact.address.city}}, {{cvs[selected].person.contact.address.country}}</li>
+                    <li>@ : {{cvs[selected].person.contact.email}}</li>
+                    <li>Tel : {{cvs[selected].person.contact.phone}}</li>
                 </ul>
             </div>
         </div>
-        <h1 id="title">{{cv[0].resume.title}}</h1>
+        <h1 id="title">{{cvs[selected].resume.title}}</h1>
         <div id="xp" class="section">
             <h3><span>+</span> Expériences professionnelles</h3>
             <div class='section-wrapper'>
-                <div ng-repeat="exp in cv[0].resume.experiences" class="info">
+                <div ng-repeat="exp in cvs[selected].resume.experiences" class="info">
                     <span class="date">de {{exp.start}} à {{exp.end}}</span>
                     <span class="detail">
                         <h4>{{exp.title}}, {{exp.company}}</h4>
@@ -47,7 +47,7 @@
         <div id="form" class="section">
             <h3><span>+</span> Formations</h3>
             <div class='section-wrapper'>
-                <div ng-repeat="educ in cv[0].resume.educations" class="info">
+                <div ng-repeat="educ in cvs[selected].resume.educations" class="info">
                     <span class="date">{{educ.start}}/{{educ.end}}</span>
                     <span class="detail">
                         <h4>{{educ.title}} à {{educ.school}}</h4>
@@ -61,7 +61,7 @@
         <div id="hobbit" class="section">
             <h3><span>+</span> Loisirs</h3>
             <div class='section-wrapper'>
-                <div ng-repeat="hob in cv[0].resume.hobbies" class="info">
+                <div ng-repeat="hob in cvs[selected].resume.hobbies" class="info">
                     <ul>
                         <li ng-repeat="cntt in hob.content">{{cntt.label}}</li>
                     </ul>
@@ -72,7 +72,7 @@
         <div id="competencies" class="section">
             <h3><span>+</span> Compétences</h3>
             <div class="section-wrapper">
-                <div ng-repeat="comp in cv[0].resume.competencies">
+                <div ng-repeat="comp in cvs[selected].resume.competencies">
                     <ul>
                         <li ng-repeat="cntt in comp.content">{{cntt.label}} : {{cntt.level}}</li>
                     </ul>

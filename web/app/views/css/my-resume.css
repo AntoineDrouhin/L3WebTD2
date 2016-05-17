@@ -7,7 +7,11 @@ nav {
 
 }
 
-nav :hover{
+#rechercheCV {
+    max-width:inherit;
+}
+
+nav li :hover{
     background-color:white;
     border-top-color:#34495e;
 }

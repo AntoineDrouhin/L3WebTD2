@@ -10,6 +10,7 @@
 <body>
     <nav>
         <h4>Liste des CV :</h4>
+        <input id ="rechercheCV" type="search" placeholder="Rechercher..." />
         <ul>
             <li ng-repeat="item in cvs" class="cv" ng-click="updateCv(item.person.id)">
                 {{item.person.name}}
@@ -80,5 +81,6 @@
             </div>
         </div>
     </div>
+    <div style="clear:both"></div>
 </body>
 </html>

@@ -20,6 +20,14 @@ nav p {
     text-align:right;
 }
 
+nav span {
+    display:inline-block;
+    margin:0px;
+}
+
+.name_title {
+    float:right;
+}
 
 
 input[type="search"] {

@@ -16,7 +16,6 @@ angular.module('myResumeApp')
                 alert("Aucun cv disponible");
             }
 
-
         });
 
         $scope.updateCv = function(id) {
@@ -26,7 +25,7 @@ angular.module('myResumeApp')
         $scope.search = function() {
             $scope.founds = [];
             for (var i = 0; i < $scope.cvs.length; ++i) {
-                if ($scope.cvs[i].person.name.indexOf(this.searchval) > -1) {
+                if ($scope.cvs[i].person.name.toLowerCase().indexOf(this.searchval.toLowerCase()) > -1) {
                     $scope.founds.push($scope.cvs[i]);
                 }
             }

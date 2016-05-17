@@ -13,7 +13,7 @@ module.exports = {
     // ---- Database configuration
     db	: {
         module  : 'mongoDB',
-        link      : "mongodb://163.172.150.53/td2"
+        link      : "mongodb://163.172.150.53:27017/td2"
     }
 
     // ---- Params Allowed Origins by environment

@@ -5,14 +5,31 @@ angular.module('myResumeApp')
 
         $http.get("./data/my-resume.json").then(function (response) {
             $scope.cvs = response.data;
-            if ($scope.cvs.length > 0)
+            $scope.founds = [];
+            if ($scope.cvs.length > 0) {
                 $scope.selected = $scope.cvs[0].person.id;
-            else
+                for (var i = 0; i < $scope.cvs.length; ++i) {
+                    $scope.founds.push($scope.cvs[i]);
+                }
+            }
+            else {
                 alert("Aucun cv disponible");
+            }
+
+
         });
 
-        $scope.updateCv =function(id) {
+        $scope.updateCv = function(id) {
             $scope.selected = id;
         };
+
+        $scope.search = function(val) {
+            for (var i = 0; i < $scope.cvs.length; ++i) {
+                if ($scope.cvs[i].person.name.indexOf(val) > 0) {
+                    $scope.founds.push($scope.cvs[i]);
+                }
+            }
+
+        }
 
     });

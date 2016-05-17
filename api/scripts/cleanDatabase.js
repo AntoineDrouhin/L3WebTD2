@@ -40,10 +40,21 @@ async.parallel({
             callback(null, 'done');
 
         })
-    }
+    },
 
     // ---- TREATMENT ON TABLE RESUME
+    resume : function(callback){
 
+        var resume = require('../app/models/Resume'),
+            Resume = mongoose.model('Resume');
+
+        Resume.remove({}).exec(function(err, result){
+
+            console.log('Clean all resume');
+            callback(null, 'done');
+
+        })
+    }
 
 },function(err, results){
 

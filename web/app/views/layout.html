@@ -10,7 +10,7 @@
 <body>
     <nav>
         <h4>Liste des CV :</h4>
-        <input id ="rechercheCV" type="search" placeholder="Rechercher..." />
+        <input id ="rechercheCV" type="text" placeholder="Rechercher..." ng-model="searchval" ng-change="search(this)"/>
         <ul>
             <li ng-repeat="item in founds" class="cv" ng-click="updateCv(item.person.id)">
                 {{item.person.name}}

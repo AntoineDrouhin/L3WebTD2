@@ -23,9 +23,10 @@ angular.module('myResumeApp')
             $scope.selected = id;
         };
 
-        $scope.search = function(val) {
+        $scope.search = function() {
+            $scope.founds = [];
             for (var i = 0; i < $scope.cvs.length; ++i) {
-                if ($scope.cvs[i].person.name.indexOf(val) > 0) {
+                if ($scope.cvs[i].person.name.indexOf(this.searchval) > -1) {
                     $scope.founds.push($scope.cvs[i]);
                 }
             }

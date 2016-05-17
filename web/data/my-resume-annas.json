@@ -1,0 +1,88 @@
+[
+    {
+
+        "person": {
+
+            "name": "Annas SAKER",
+            "birhtDate": "29/05/1996",
+            "photo": "/img/asaker.png",
+
+            "contact": {
+
+                "address": {
+                    "street": "7, rue de l'Olympisme",
+                    "city": "La Plaine Saint-Denis",
+                    "zipCode": "93210",
+                    "country": "France"
+                },
+
+                "email": "annas9001@gmail.com",
+                "phone": "+33 (0) 6 51 82 87 07"
+            }
+
+        },
+
+        "resume": {
+
+            "title": "",
+
+            "experiences": [
+                {
+                    "start": "2010",
+                    "end": "2012",
+                    "title": "Assistant Developer",
+                    "company": "Google Inc.",
+                    "location": "New York",
+                    "description": [ "Wow", "Waw" ]
+                },
+
+                {
+                    "start": "2010",
+                    "end": "2012",
+                    "title": "Assistant Developer",
+                    "company": "Google Inc.",
+                    "location": "New York",
+                    "description": [ "Wow", "Waw" ]
+                }
+            ],
+
+            "educations": [
+                {
+                    "start": "",
+                    "end": "",
+                    "title": "",
+                    "school": "",
+                    "location": "",
+                    "description": [ "", "" ]
+                }
+            ],
+
+            "hobbies": [
+                {
+                    "type": "",
+                    "content": [
+                        {
+                            "label": "",
+                            "detail": ""
+                        }
+                    ]
+                }
+            ],
+
+            "competencies": [
+                {
+                    "type": "",
+                    "content": [
+                        {
+                            "label": "",
+                            "level": ""
+                        }
+                    ]
+                }
+            ],
+
+            "extra": ""
+
+        }
+    }
+]

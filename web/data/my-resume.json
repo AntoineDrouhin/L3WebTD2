@@ -1,382 +1,410 @@
-[{
+[
+    {
 
-  "person" : {
-    "id" : 0,
-    "name"      : "Geoffrey HARRAZI",
-    "birhtDate" : "04/06/1994",
-    "photo"     : "",
+        "person": {
+            "id": 0,
+            "name": "Geoffrey HARRAZI",
+            "birhtDate": "04/06/1994",
+            "photo": "img/geoffrey_h.jpg",
 
-    "contact" : {
+            "contact": {
 
-      "address" : {
-        "street"  : "20 rue de rubelle",
-        "city"    : "Montlignon",
-        "zipCode" : "95680",
-        "country" : "FRANCE"
-      },
+                "address": {
+                    "street": "20 rue de rubelle",
+                    "city": "Montlignon",
+                    "zipCode": "95680",
+                    "country": "FRANCE"
+                },
 
-      "email"     : "geoffreyharrazi@gmail.com",
-      "phone"     : "0681280748"
-    }
+                "email": "geoffreyharrazi@gmail.com",
+                "phone": "0681280748"
+            }
 
-  },
-
-  "resume" : {
-
-    "title" : "Recherche de stage",
-
-    "experiences" : [
-      {
-        "start"     : "2015",
-        "end"       : "2016",
-        "title"     : "Analyste programmeur",
-        "company"   : "CGI",
-        "location"  : "Poitiers",
-        "description" : ["Projet d’intégration SAP Slcm, MM, HR","Projet GCF, CNED "]
-      },
-      {
-        "start"     : "Juin 2015",
-        "end"       : "Juillet 2015",
-        "title"     : "Ouvrier qualifié",
-        "company"   : "SGM",
-        "location"  : "Argebteuil",
-        "description" : ["Serrurerie, Métallerie, Ferronnerie","Fabriques en atelier (soudure, coupe, pose)"]
-      }
-    ],
-
-    "educations" : [
-      {
-        "start"     : "2015",
-        "end"       : "2016",
-        "title"     : "L3 MIAGE Sorbonne en Apprentissage",
-        "school"   : "Université Paris 1 - Panthéon - Sorbonne",
-        "location"  : "Paris",
-        "description" : ["Informatique","Management","UFR27"]
-      },
-      {
-        "start"     : "2014",
-        "end"       : "2015",
-        "title"     : "BTS Service Informatique des Organisations (SIO) en 1 an",
-        "school"   : "Lycée Jean-Jacques Rousseau",
-        "location"  : "Montmorency 95160",
-        "description" : ["Option : Mathématiques Approfondies et SLAM"]
-      },
-      {
-        "start"     : "2011",
-        "end"       : "2012",
-        "title"     : "Baccalauréat Sciences et Techniques Industrielles (STI)",
-        "school"   : "Lycée Jean Jaurès",
-        "location"  : "Argenteuil",
-        "description" : ["Option : Electronique ","Mention « Bien »"]
-      }
-    ],
-
-    "hobbies" : [
-      {
-        "type" : "Sport",
-        "content" : [{
-          "label" : "Boxe",
-          "detail" : "Française"
         },
-          {
-            "label" : "Natation",
-            "detail" : "Niveau debutant"
-          }]
-      },
-      {
-        "type" : "Culture",
-        "content" : [{
-          "label" : "Lecture",
-          "detail" : "Français et anglais"
+
+        "resume": {
+
+            "title": "Recherche de stage",
+
+            "experiences": [
+                {
+                    "start": "2015",
+                    "end": "2016",
+                    "title": "Analyste programmeur",
+                    "company": "CGI",
+                    "location": "Poitiers",
+                    "description": [ "Projet d’intégration SAP Slcm, MM, HR", "Projet GCF, CNED " ]
+                },
+                {
+                    "start": "Juin 2015",
+                    "end": "Juillet 2015",
+                    "title": "Ouvrier qualifié",
+                    "company": "SGM",
+                    "location": "Argebteuil",
+                    "description": [ "Serrurerie, Métallerie, Ferronnerie", "Fabriques en atelier (soudure, coupe, pose)" ]
+                }
+            ],
+
+            "educations": [
+                {
+                    "start": "2015",
+                    "end": "2016",
+                    "title": "L3 MIAGE Sorbonne en Apprentissage",
+                    "school": "Université Paris 1 - Panthéon - Sorbonne",
+                    "location": "Paris",
+                    "description": [ "Informatique", "Management", "UFR27" ]
+                },
+                {
+                    "start": "2014",
+                    "end": "2015",
+                    "title": "BTS Service Informatique des Organisations (SIO) en 1 an",
+                    "school": "Lycée Jean-Jacques Rousseau",
+                    "location": "Montmorency 95160",
+                    "description": [ "Option : Mathématiques Approfondies et SLAM" ]
+                },
+                {
+                    "start": "2011",
+                    "end": "2012",
+                    "title": "Baccalauréat Sciences et Techniques Industrielles (STI)",
+                    "school": "Lycée Jean Jaurès",
+                    "location": "Argenteuil",
+                    "description": [ "Option : Electronique ", "Mention « Bien »" ]
+                }
+            ],
+
+            "hobbies": [
+                {
+                    "type": "Sport",
+                    "content": [
+                        {
+                            "label": "Boxe",
+                            "detail": "Française"
+                        },
+                        {
+                            "label": "Natation",
+                            "detail": "Niveau debutant"
+                        }
+                    ]
+                },
+                {
+                    "type": "Culture",
+                    "content": [
+                        {
+                            "label": "Lecture",
+                            "detail": "Français et anglais"
+                        },
+                        {
+                            "label": "Cinéma",
+                            "detail": ""
+                        }
+                    ]
+                }
+            ],
+
+            "competencies": [
+                {
+                    "type": "Languages",
+                    "content": [
+                        {
+                            "label": "Java",
+                            "level": "Expert"
+                        },
+                        {
+                            "label": "COBOL",
+                            "level": "Junior"
+                        }
+                    ]
+                },
+
+                {
+                    "type": "Logiciels",
+                    "content": [
+                        {
+                            "label": "SAP",
+                            "level": "Junior"
+                        },
+                        {
+                            "label": "NetBeans",
+                            "level": "Medium"
+                        }
+                    ]
+                }
+            ],
+
+            "extra": ""
+
+        }
+    },
+    {
+        "person": {
+            "id": 1,
+            "name": "Aurélien Garret",
+            "birhtDate": "04/06/1994",
+            "photo": "img/aurelien_g.jpg",
+
+            "contact": {
+
+                "address": {
+                    "street": "20 rue de rubelle",
+                    "city": "Montlignon",
+                    "zipCode": "95680",
+                    "country": "FRANCE"
+                },
+
+                "email": "geoffreyharrazi@gmail.com",
+                "phone": "0681280748"
+            }
+
         },
-          {
-            "label" : "Cinéma",
-            "detail" : ""
-          }]
-      }
-    ],
 
-    "competencies" : [
-      {
-        "type" : "Languages",
-        "content" : [{
-          "label" : "Java",
-          "level" : "Expert"
+        "resume": {
+
+            "title": "Recherche de stage",
+
+            "experiences": [
+                {
+                    "start": "2015",
+                    "end": "2016",
+                    "title": "Analyste programmeur",
+                    "company": "CGI",
+                    "location": "Poitiers",
+                    "description": [ "Projet d’intégration SAP Slcm, MM, HR", "Projet GCF, CNED " ]
+                },
+                {
+                    "start": "Juin 2015",
+                    "end": "Juillet 2015",
+                    "title": "Ouvrier qualifié",
+                    "company": "SGM",
+                    "location": "Argebteuil",
+                    "description": [ "Serrurerie, Métallerie, Ferronnerie", "Fabriques en atelier (soudure, coupe, pose)" ]
+                }
+            ],
+
+            "educations": [
+                {
+                    "start": "2015",
+                    "end": "2016",
+                    "title": "L3 MIAGE Sorbonne en Apprentissage",
+                    "school": "Université Paris 1 - Panthéon - Sorbonne",
+                    "location": "Paris",
+                    "description": [ "Informatique", "Management", "UFR27" ]
+                },
+                {
+                    "start": "2014",
+                    "end": "2015",
+                    "title": "BTS Service Informatique des Organisations (SIO) en 1 an",
+                    "school": "Lycée Jean-Jacques Rousseau",
+                    "location": "Montmorency 95160",
+                    "description": [ "Option : Mathématiques Approfondies et SLAM" ]
+                },
+                {
+                    "start": "2011",
+                    "end": "2012",
+                    "title": "Baccalauréat Sciences et Techniques Industrielles (STI)",
+                    "school": "Lycée Jean Jaurès",
+                    "location": "Argenteuil",
+                    "description": [ "Option : Electronique ", "Mention « Bien »" ]
+                }
+            ],
+
+            "hobbies": [
+                {
+                    "type": "Sport",
+                    "content": [
+                        {
+                            "label": "Boxe",
+                            "detail": "Française"
+                        },
+                        {
+                            "label": "Natation",
+                            "detail": "Niveau debutant"
+                        }
+                    ]
+                },
+                {
+                    "type": "Culture",
+                    "content": [
+                        {
+                            "label": "Lecture",
+                            "detail": "Français et anglais"
+                        },
+                        {
+                            "label": "Cinéma",
+                            "detail": ""
+                        }
+                    ]
+                }
+            ],
+
+            "competencies": [
+                {
+                    "type": "Languages",
+                    "content": [
+                        {
+                            "label": "Java",
+                            "level": "Expert"
+                        },
+                        {
+                            "label": "COBOL",
+                            "level": "Junior"
+                        }
+                    ]
+                },
+
+                {
+                    "type": "Logiciels",
+                    "content": [
+                        {
+                            "label": "SAP",
+                            "level": "Junior"
+                        },
+                        {
+                            "label": "NetBeans",
+                            "level": "Medium"
+                        }
+                    ]
+                }
+            ],
+
+            "extra": ""
+
+        }
+    },
+     {
+        "person": {
+            "id": 2,
+            "name": "Annas SAKER",
+            "birhtDate": "04/06/1994",
+            "photo": "img/annas_s.jpg",
+
+            "contact": {
+
+                "address": {
+                    "street": "20 rue de rubelle",
+                    "city": "Montlignon",
+                    "zipCode": "95680",
+                    "country": "FRANCE"
+                },
+
+                "email": "geoffreyharrazi@gmail.com",
+                "phone": "0681280748"
+            }
+
         },
-          {
-            "label": "COBOL",
-            "level": "Junior"
-          }]
-      },
 
-      {
-        "type" : "Logiciels",
-        "content" : [{
-          "label" : "SAP",
-          "level" : "Junior"
-        },
-          {
-            "label": "NetBeans",
-            "level": "Medium"
-          }]
-      }
-    ],
+        "resume": {
 
-    "extra" : ""
+            "title": "Recherche de stage",
 
-  }
-}, {
-  "person" : {
-    "id" : 1,
-  "name"      : "Aurélien Garret",
-  "birhtDate" : "04/06/1994",
-  "photo"     : "",
+            "experiences": [
+                {
+                    "start": "2015",
+                    "end": "2016",
+                    "title": "Analyste programmeur",
+                    "company": "CGI",
+                    "location": "Poitiers",
+                    "description": [ "Projet d’intégration SAP Slcm, MM, HR", "Projet GCF, CNED " ]
+                },
+                {
+                    "start": "Juin 2015",
+                    "end": "Juillet 2015",
+                    "title": "Ouvrier qualifié",
+                    "company": "SGM",
+                    "location": "Argebteuil",
+                    "description": [ "Serrurerie, Métallerie, Ferronnerie", "Fabriques en atelier (soudure, coupe, pose)" ]
+                }
+            ],
 
-  "contact" : {
+            "educations": [
+                {
+                    "start": "2015",
+                    "end": "2016",
+                    "title": "L3 MIAGE Sorbonne en Apprentissage",
+                    "school": "Université Paris 1 - Panthéon - Sorbonne",
+                    "location": "Paris",
+                    "description": [ "Informatique", "Management", "UFR27" ]
+                },
+                {
+                    "start": "2014",
+                    "end": "2015",
+                    "title": "BTS Service Informatique des Organisations (SIO) en 1 an",
+                    "school": "Lycée Jean-Jacques Rousseau",
+                    "location": "Montmorency 95160",
+                    "description": [ "Option : Mathématiques Approfondies et SLAM" ]
+                },
+                {
+                    "start": "2011",
+                    "end": "2012",
+                    "title": "Baccalauréat Sciences et Techniques Industrielles (STI)",
+                    "school": "Lycée Jean Jaurès",
+                    "location": "Argenteuil",
+                    "description": [ "Option : Electronique ", "Mention « Bien »" ]
+                }
+            ],
 
-    "address" : {
-      "street"  : "20 rue de rubelle",
-      "city"    : "Montlignon",
-      "zipCode" : "95680",
-      "country" : "FRANCE"
-    },
+            "hobbies": [
+                {
+                    "type": "Sport",
+                    "content": [
+                        {
+                            "label": "Boxe",
+                            "detail": "Française"
+                        },
+                        {
+                            "label": "Natation",
+                            "detail": "Niveau debutant"
+                        }
+                    ]
+                },
+                {
+                    "type": "Culture",
+                    "content": [
+                        {
+                            "label": "Lecture",
+                            "detail": "Français et anglais"
+                        },
+                        {
+                            "label": "Cinéma",
+                            "detail": ""
+                        }
+                    ]
+                }
+            ],
 
-    "email"     : "geoffreyharrazi@gmail.com",
-    "phone"     : "0681280748"
-  }
+            "competencies": [
+                {
+                    "type": "Languages",
+                    "content": [
+                        {
+                            "label": "Java",
+                            "level": "Expert"
+                        },
+                        {
+                            "label": "COBOL",
+                            "level": "Junior"
+                        }
+                    ]
+                },
 
-},
+                {
+                    "type": "Logiciels",
+                    "content": [
+                        {
+                            "label": "SAP",
+                            "level": "Junior"
+                        },
+                        {
+                            "label": "NetBeans",
+                            "level": "Medium"
+                        }
+                    ]
+                }
+            ],
 
-  "resume" : {
+            "extra": ""
 
-  "title" : "Recherche de stage",
-
-  "experiences" : [
-    {
-      "start"     : "2015",
-      "end"       : "2016",
-      "title"     : "Analyste programmeur",
-      "company"   : "CGI",
-      "location"  : "Poitiers",
-      "description" : ["Projet d’intégration SAP Slcm, MM, HR","Projet GCF, CNED "]
-    },
-    {
-      "start"     : "Juin 2015",
-      "end"       : "Juillet 2015",
-      "title"     : "Ouvrier qualifié",
-      "company"   : "SGM",
-      "location"  : "Argebteuil",
-      "description" : ["Serrurerie, Métallerie, Ferronnerie","Fabriques en atelier (soudure, coupe, pose)"]
+        }
     }
-  ],
 
-  "educations" : [
-    {
-      "start"     : "2015",
-      "end"       : "2016",
-      "title"     : "L3 MIAGE Sorbonne en Apprentissage",
-      "school"   : "Université Paris 1 - Panthéon - Sorbonne",
-      "location"  : "Paris",
-      "description" : ["Informatique","Management","UFR27"]
-    },
-    {
-      "start"     : "2014",
-      "end"       : "2015",
-      "title"     : "BTS Service Informatique des Organisations (SIO) en 1 an",
-      "school"   : "Lycée Jean-Jacques Rousseau",
-      "location"  : "Montmorency 95160",
-      "description" : ["Option : Mathématiques Approfondies et SLAM"]
-    },
-    {
-      "start"     : "2011",
-      "end"       : "2012",
-      "title"     : "Baccalauréat Sciences et Techniques Industrielles (STI)",
-      "school"   : "Lycée Jean Jaurès",
-      "location"  : "Argenteuil",
-      "description" : ["Option : Electronique ","Mention « Bien »"]
-    }
-  ],
 
-  "hobbies" : [
-    {
-      "type" : "Sport",
-      "content" : [{
-        "label" : "Boxe",
-        "detail" : "Française"
-      },
-        {
-          "label" : "Natation",
-          "detail" : "Niveau debutant"
-        }]
-    },
-    {
-      "type" : "Culture",
-      "content" : [{
-        "label" : "Lecture",
-        "detail" : "Français et anglais"
-      },
-        {
-          "label" : "Cinéma",
-          "detail" : ""
-        }]
-    }
-  ],
-
-  "competencies" : [
-    {
-      "type" : "Languages",
-      "content" : [{
-        "label" : "Java",
-        "level" : "Expert"
-      },
-        {
-          "label": "COBOL",
-          "level": "Junior"
-        }]
-    },
-
-    {
-      "type" : "Logiciels",
-      "content" : [{
-        "label" : "SAP",
-        "level" : "Junior"
-      },
-        {
-          "label": "NetBeans",
-          "level": "Medium"
-        }]
-    }
-  ],
-
-  "extra" : ""
-
-}
-  },{
-  "person" : {
-    "id" : 2,
-  "name"      : "Annas Saker",
-  "birhtDate" : "04/06/1994",
-  "photo"     : "",
-
-  "contact" : {
-
-    "address" : {
-      "street"  : "20 rue de rubelle",
-      "city"    : "Montlignon",
-      "zipCode" : "95680",
-      "country" : "FRANCE"
-    },
-
-    "email"     : "geoffreyharrazi@gmail.com",
-    "phone"     : "0681280748"
-  }
-
-},
-
-  "resume" : {
-
-  "title" : "Recherche de stage",
-
-  "experiences" : [
-    {
-      "start"     : "2015",
-      "end"       : "2016",
-      "title"     : "Analyste programmeur",
-      "company"   : "CGI",
-      "location"  : "Poitiers",
-      "description" : ["Projet d’intégration SAP Slcm, MM, HR","Projet GCF, CNED "]
-    },
-    {
-      "start"     : "Juin 2015",
-      "end"       : "Juillet 2015",
-      "title"     : "Ouvrier qualifié",
-      "company"   : "SGM",
-      "location"  : "Argebteuil",
-      "description" : ["Serrurerie, Métallerie, Ferronnerie","Fabriques en atelier (soudure, coupe, pose)"]
-    }
-  ],
-
-  "educations" : [
-    {
-      "start"     : "2015",
-      "end"       : "2016",
-      "title"     : "L3 MIAGE Sorbonne en Apprentissage",
-      "school"   : "Université Paris 1 - Panthéon - Sorbonne",
-      "location"  : "Paris",
-      "description" : ["Informatique","Management","UFR27"]
-    },
-    {
-      "start"     : "2014",
-      "end"       : "2015",
-      "title"     : "BTS Service Informatique des Organisations (SIO) en 1 an",
-      "school"   : "Lycée Jean-Jacques Rousseau",
-      "location"  : "Montmorency 95160",
-      "description" : ["Option : Mathématiques Approfondies et SLAM"]
-    },
-    {
-      "start"     : "2011",
-      "end"       : "2012",
-      "title"     : "Baccalauréat Sciences et Techniques Industrielles (STI)",
-      "school"   : "Lycée Jean Jaurès",
-      "location"  : "Argenteuil",
-      "description" : ["Option : Electronique ","Mention « Bien »"]
-    }
-  ],
-
-  "hobbies" : [
-    {
-      "type" : "Sport",
-      "content" : [{
-        "label" : "Boxe",
-        "detail" : "Française"
-      },
-        {
-          "label" : "Natation",
-          "detail" : "Niveau debutant"
-        }]
-    },
-    {
-      "type" : "Culture",
-      "content" : [{
-        "label" : "Lecture",
-        "detail" : "Français et anglais"
-      },
-        {
-          "label" : "Cinéma",
-          "detail" : ""
-        }]
-    }
-  ],
-
-  "competencies" : [
-    {
-      "type" : "Languages",
-      "content" : [{
-        "label" : "Java",
-        "level" : "Expert"
-      },
-        {
-          "label": "COBOL",
-          "level": "Junior"
-        }]
-    },
-
-    {
-      "type" : "Logiciels",
-      "content" : [{
-        "label" : "SAP",
-        "level" : "Junior"
-      },
-        {
-          "label": "NetBeans",
-          "level": "Medium"
-        }]
-    }
-  ],
-
-  "extra" : ""
-
-}
-
-  }]
-
+]

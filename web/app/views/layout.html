@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Aurélien Garret</title>
-    <link rel="stylesheet" href="css/my-resume.css">
-    <script type='text/javascript' src='js/vendors/jquery-1.12.3.min.js'></script>
-    <script type='text/javascript' src='js/my-resume.js'></script>
+    <title>Aurï¿½lien Garret</title>
+    <link rel="stylesheet" href="app/views/css/my-resume.css">
+    <script type='text/javascript' src='app/views/js/vendors/jquery-1.12.3.min.js'></script>
+    <script type='text/javascript' src='app/views/js/my-resume.js'></script>
 </head>
 <body>
     <div id="wrapper">
@@ -13,7 +13,7 @@
             <img src="{{person.photo}}" alt="{{person.name}}" />
             <div>
                 <ul>
-                    <li><h1>{{person.name}}</h2></li>
+                    <li><h1>{{cv[0].person.name}}</h1></li>
                     <li>{{person.contact.address.street}}, {{person.contact.address.zipCode}} {{person.contact.address.city}}, {{person.contact.address.country}}</li>
                     <li>@ : {{person.email}}</li>
                     <li>Tel : {{person.phone}}</li>
@@ -22,10 +22,10 @@
         </div>
         <h1 id="title">{{person.resume.title}}</h1>
         <div id="xp" class="section">
-            <h3><span>+</span> Expériences professionnelles</h3>
+            <h3><span>+</span> Expï¿½riences professionnelles</h3>
             <div class='section-wrapper'>
                 <div ng-repeat="exp in experiences" class="info">
-                    <span class="date">de {{exp.start}} à {{exp.end}}</span>
+                    <span class="date">de {{exp.start}} ï¿½ {{exp.end}}</span>
                     <span class="detail">
                         <h4>{{exp.title}}, {{exp.company}}</h4>
                         <ul>

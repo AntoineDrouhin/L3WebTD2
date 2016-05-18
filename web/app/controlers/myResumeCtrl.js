@@ -38,10 +38,11 @@ angular.module('myResumeApp')
 
                     $scope.founds = [];
                     if ($scope.cvs.length > 0) {
-                        $scope.selected = $scope.cvs[0].person.id;
+                        $scope.selected = 0;
                         for (var i = 0; i < $scope.cvs.length; ++i) {
                             $scope.founds.push($scope.cvs[i]);
                         }
+
                     }
                     else {
                         alert("Aucun cv disponible");
@@ -55,8 +56,13 @@ angular.module('myResumeApp')
 
 
         $scope.updateCv = function(id) {
+            for (var i = 0; i < $scope.cvs.length; i++) {
+                if (id == $scope.cvs[i].person._id) {
+                    $scope.selected = i;
+                    break;
+                }
+            }
 
-            $scope.selected = id;
         };
 
         $scope.search = function () {

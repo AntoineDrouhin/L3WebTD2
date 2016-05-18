@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Aurélien Garret</title>
+    <title>Visualiser les CV</title>
     <link rel="stylesheet" href="app/views/css/my-resume.css">
     <script type='text/javascript' src='app/views/js/vendors/jquery-1.12.3.min.js'></script>
     <script type='text/javascript' src='app/views/js/my-resume.js'></script>
@@ -14,28 +14,12 @@
             <input type="search" placeholder="Rechercher..." ng-model="searchval" ng-change="search(this)"  />
         </div>
         <ul>
-            <li class="cv_item cv" ng-repeat="item in founds" ng-click="updateCv(item.person.id)">
-                <span><img src="{{item.person.photo}}" alt="{{item.person.name}}" /></span>
-                <span class="name_title">
-                    <b><a>{{item.person.name}}</a></b>
-                    <p>{{item.resume.title}}</p>
-                </span>
-            </li>
+            <cvtab></cvtab>
         </ul>
     </nav>
     <div id="wrapper">
 
-        <div id="header" class="section">
-            <img src="{{cvs[selected].person.photo}}" alt="{{cvs[selected].person.name}}" />
-            <div>
-                <ul>
-                    <li><h1>{{cvs[selected].person.name}}</h1></li>
-                    <li>{{cvs[selected].person.contact.address.street}}, {{cvs[selected].person.contact.address.zipCode}} {{cvs[selected].person.contact.address.city}}, {{cvs[selected].person.contact.address.country}}</li>
-                    <li>@ : {{cvs[selected].person.contact.email}}</li>
-                    <li>Tel : {{cvs[selected].person.contact.phone}}</li>
-                </ul>
-            </div>
-        </div>
+        <cvhead></cvhead>
         <h1 id="title">{{cvs[selected].resume.title}}</h1>
         <div id="xp" class="section">
             <h3><span>+</span> Expériences professionnelles</h3>

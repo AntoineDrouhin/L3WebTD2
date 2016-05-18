@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('myResumeApp')
-    .controller('myResumeCtrl', function($scope, $http){
+    .controller('myResumeCtrl', function ($scope, $http) {
 
         $http.get("./data/my-resume.json").then(function (response) {
             debugger;
@@ -19,11 +19,11 @@ angular.module('myResumeApp')
 
         });
 
-        $scope.updateCv = function(id) {
+        $scope.updateCv = function (id) {
             $scope.selected = id;
         };
 
-        $scope.search = function() {
+        $scope.search = function () {
             $scope.founds = [];
             for (var i = 0; i < $scope.cvs.length; ++i) {
                 if ($scope.cvs[i].person.name.toLowerCase().indexOf(this.searchval.toLowerCase()) > -1) {
@@ -34,8 +34,19 @@ angular.module('myResumeApp')
         }
 
     })
-    .directive('xp',function() {
+    .directive('xp', function () {
         return {
-            templateUrl : "app/views/directives/xp.html"
+            templateUrl: "app/views/directives/xp.html"
         }
-    });
+    })
+    .directive('cvtab', function () {
+        return {
+            templateUrl: "app/views/directives/cvtab.html"
+        }
+    })
+    .directive('cvhead', function () {
+        return {
+            templateUrl: "app/views/directives/cvhead.html"
+        }
+    })
+;

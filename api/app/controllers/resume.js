@@ -10,6 +10,7 @@ var ResumeController = exports;
 //--------------------------------------- Module dependencies.
 var mongoose 	= require('mongoose'),
     Resume 		= mongoose.model('Resume'),
+    personCtrl = require('./person.js');
     moment      = require('moment'),
     Util        = require('../helpers/appUtils');
 
@@ -22,11 +23,11 @@ ResumeController.getAll = function(req, res){
 
     Util.info('Load all resume');
 
-    Resume.find(null,function(err, cvs){
+    Resume.find(null,function(err, results){
         if(err){
             res.status(400).json({message : "Error" });
         }else{
-            res.status(200).json(cvs);
+            res.status(200).json(results);
         }
     });
 };

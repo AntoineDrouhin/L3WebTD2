@@ -1,5 +1,5 @@
 /**
- * Created by aureliengarret on 17/05/2016.
+ * Created by aureliengarret on 18/05/2016.
  */
 module.exports = function(router) {
     //------ LOAD CONTROLLER
@@ -7,21 +7,15 @@ module.exports = function(router) {
 
     var path = require('path'),
         Util = require('../helpers/appUtils');
-        resumeCtrl = require('../controllers/resume.js');
+    personCtrl = require('../controllers/person.js');
 
     // --------------------------------------------------------------------------------------------------------------
     //                                                                                                  VERSION API
     // --------------------------------------------------------------------------------------------------------------
-    // -------- HOMEPAGE
-    router.get('/resume/:id', function(req, res){
-        Util.info('Load API information');
-        console.log("Id resume needed : " + req.params.id);
-        resumeCtrl.getResume(req, res);
-    });
 
-    router.get('/resume', function(req, res){
+    router.get('/person', function(req, res){
         Util.info('Load API information');
-        resumeCtrl.getAll(req, res);
+        personCtrl.getAll(req, res);
     });
 
 

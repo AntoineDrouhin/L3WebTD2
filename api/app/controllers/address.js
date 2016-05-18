@@ -1,12 +1,14 @@
+/**
+ * Created by aureliengarret on 18/05/2016.
+ */
 // ======================================================
-// Person Main controller ===============================
+// Address Main controller ===============================
 // ======================================================
-var PersonController = exports;
+var AddressController = exports;
 
 
 //--------------------------------------- Module dependencies.
 var mongoose 	= require('mongoose'),
-    Person 		= mongoose.model('Person'),
     Address     = mongoose.model('Address'),
     moment      = require('moment'),
     Util        = require('../helpers/appUtils');
@@ -16,13 +18,13 @@ var mongoose 	= require('mongoose'),
  * @param req
  * @param res
  */
-PersonController.getAll = function(req, res){
+AddressController.getAll = function(req, res){
 
     Util.info('Load all people');
 
-    Person.find(null, function(err, results){
+    Address.find(null, function(err, results){
         if(err){
-            res.status(400).json({message : "Error Loading Person"})
+            res.status(400).json({message : "Error Loading Address"})
         }else{
             res.status(200).json(results)
         }

@@ -40,20 +40,12 @@
         <div id="xp" class="section">
             <h3><span>+</span> Expériences professionnelles</h3>
             <!-- HERE -->
-            <xp></xp>
+            <xp ng-repeat ="exp in cvs[selected].resume.experiences"></xp>
         </div>
         <div id="form" class="section">
             <h3><span>+</span> Formations</h3>
             <div class='section-wrapper'>
-                <div ng-repeat="educ in cvs[selected].resume.educations" class="info">
-                    <span class="date">{{educ.start}}/{{educ.end}}</span>
-                    <span class="detail">
-                        <h4>{{educ.title}} à {{educ.school}}</h4>
-                        <ul>
-                            <li ng-repeat="desc in educ.description">{{desc}}</li>
-                        </ul>
-                    </span>
-                </div>
+                <xp ng-repeat="exp in cvs[selected].resume.educations"></xp>
             </div>
         </div>
         <div id="hobbit" class="section">

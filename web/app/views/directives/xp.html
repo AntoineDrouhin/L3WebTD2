@@ -1,12 +1,10 @@
-<div class='section-wrapper'>
-    <div class="info">
-        <span class="date">de {{exp.start}} à {{exp.end}}</span>
-        <span class="detail">
-            <h4 ng-if="exp.company">{{exp.title}}, {{exp.company}}</h4>
-            <h4 ng-if="exp.school">{{exp.title}}, {{exp.school}}</h4>
-            <ul>
-                <li ng-repeat="desc in exp.description">{{desc}}</li>
-            </ul>
-        </span>
-    </div>
+<div class="info">
+    <span class="date">de {{exp.start}} à {{exp.end}}</span>
+    <span class="detail">
+        <h4 ng-if="exp.company">{{exp.title}}, {{exp.company}}</h4>
+        <h4 ng-if="exp.school">{{exp.title}}, {{exp.school}}</h4>
+        <ul>
+            <li ng-repeat="desc in exp.description">{{desc}}</li>
+        </ul>
+    </span>
 </div>

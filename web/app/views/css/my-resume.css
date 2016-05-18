@@ -125,13 +125,20 @@ nav img{
 }
 
 .date {
-	margin: 20px;
+	margin: 2%;
 	display : inline-block;
 	font-style: italic;
-	width: 180px;
+	width: 20%;
+
 }
 
 .detail {
 	vertical-align: top;
 	display : inline-block;
+    width:70%;
+    margin-top:2%;
+}
+
+.detail h4 {
+    margin-top:0px;
 }

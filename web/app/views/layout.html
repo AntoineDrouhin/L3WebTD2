@@ -11,7 +11,7 @@
     <nav>
         <h4>Liste des CV :</h4>
         <div id="rechercheCV">
-            <input type="search" placeholder="Rechercher..." ng-model="searchval" ng-change="search(this)"  />
+            <input type="search" placeholder="Rechercher..." ng-model="searchval" ng-change="search(this)" />
         </div>
         <ul>
             <cvtab></cvtab>
@@ -23,8 +23,10 @@
         <h1 id="title">{{cvs[selected].resume.title}}</h1>
         <div id="xp" class="section">
             <h3><span>+</span> Expériences professionnelles</h3>
-            <!-- HERE -->
-            <xp ng-repeat ="exp in cvs[selected].resume.experiences"></xp>
+            <div class='section-wrapper'>
+                <!-- HERE -->
+                <xp ng-repeat="exp in cvs[selected].resume.experiences"></xp>
+            </div>
         </div>
         <div id="form" class="section">
             <h3><span>+</span> Formations</h3>
@@ -37,7 +39,7 @@
             <div class='section-wrapper'>
                 <div ng-repeat="hob in cvs[selected].resume.hobbies" class="info">
                     <ul>
-                        <li ng-repeat="cntt in hob.content">{{cntt.label}}</li>
+                        <other ng-repeat="cntt in hob.content"></other>
                     </ul>
                 </div>
             </div>
@@ -48,7 +50,7 @@
             <div class="section-wrapper">
                 <div ng-repeat="comp in cvs[selected].resume.competencies">
                     <ul>
-                        <li ng-repeat="cntt in comp.content">{{cntt.label}} : {{cntt.level}}</li>
+                        <other ng-repeat="cntt in comp.content"></other>
                     </ul>
                 </div>
             </div>

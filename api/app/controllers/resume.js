@@ -22,19 +22,25 @@ ResumeController.getAll = function(req, res){
 
     Util.info('Load all resume');
 
-    Resume.find({}).populate('person').exec(function(err, results){
+    Resume.find(null,function(err, cvs){
         if(err){
-            res.status(400).json({message : "Error Loading Resume"})
+            res.status(400).json({message : "Error" });
         }else{
-            res.status(200).json(results)
+            res.status(200).json(cvs);
         }
-    })
+    });
 };
 
 ResumeController.getResume = function(req, res) {
+
+    Util.info('Load a resume');
+
     Resume.findById(req.params.id, function (err, cvs) {
-        if (err) { throw err; }
-        res.status(200).json(cvs);
+        if(err){
+            res.status(400).json({message : "Error"})
+        }else{
+            res.status(200).json(cvs);
+        }
     });
 };
 

@@ -19,6 +19,11 @@ module.exports = function(router) {
         resumeCtrl.getResume(req, res);
     });
 
+    router.get('/resume', function(req, res){
+        Util.info('Load API information');
+        resumeCtrl.getAll(req, res);
+    });
+
 /*    router.param('id',function(req,res,next,id){
         req.id = id;
 

@@ -1,0 +1,11 @@
+<div class='section-wrapper'>
+    <div ng-repeat="exp in cvs[selected].resume.experiences" class="info">
+        <span class="date">de {{exp.start}} à {{exp.end}}</span>
+                    <span class="detail">
+                        <h4>{{exp.title}}, {{exp.company}}</h4>
+                        <ul>
+                            <li ng-repeat="desc in exp.description">{{desc}}</li>
+                        </ul>
+                    </span>
+    </div>
+</div>

@@ -4,6 +4,7 @@ angular.module('myResumeApp')
     .controller('myResumeCtrl', function($scope, $http){
 
         $http.get("./data/my-resume.json").then(function (response) {
+            debugger;
             $scope.cvs = response.data;
             $scope.founds = [];
             if ($scope.cvs.length > 0) {
@@ -32,4 +33,9 @@ angular.module('myResumeApp')
 
         }
 
+    })
+    .directive('xp',function() {
+        return {
+            templateUrl : "app/views/directives/xp.html"
+        }
     });
